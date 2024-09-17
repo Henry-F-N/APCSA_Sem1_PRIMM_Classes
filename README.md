@@ -12,23 +12,23 @@ it can help supplement your notes.
 **Without running the program**, predict what its behavior is.
 
 1. What will the program output when it is run?
-    >  your answer
+    >  It will print out side and then something
 2. What do you think the words `public` and `private` mean?
-    >  your answer
+    >  Public is something that can be accessed by other .java files, but Private means only code from the same .java file
 3. How are the files `ShapeDriver.java` and `Square.java` related? 
-    >  your answer
+    >  Shapedriver gets a function that is established in the Square file
 4. There is no method definition for `Square()`. Do you think the code will compile? 
-    > your answer
+    > Yes because it is creating a new Square, so it will compile
 5. Why do the methods/functions `getSide()` and `setSide()` exist? 
-    > your answer
+    > So that the side can be establish and set in stone
 
 ## Run
 Run the program. 
 1. What is the output?
-    > your answer
+    > Side: 1.00
 
 2. Did your prediction agree with the output? Explain where it may have differed.
-    > your answer
+    > It did sorta aline, I was unspecific in my initial prediction but it was not wrong.
 
 ## Investigate
 In this section, your instructor will alternate between explaining topics and tackling a `TODO` in the Modify section.
