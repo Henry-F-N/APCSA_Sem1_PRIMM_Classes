@@ -4,7 +4,7 @@
  * @version 1.0
  * @since 2024-09-
  */
-
+import java.lang.Math;
 class Square {
         /** The side length of the square **/
     private double side = 1.0;
@@ -21,7 +21,12 @@ class Square {
      * Constructor
      * @param side double representing the side length. Assumes positive non-zero 
      */
-        // TODO: add a constructor that takes a side length
+        // add a constructor that takes a side length
+    public Square(double s) {
+        side = s;
+        perimeter = s*4;
+        area = s*s;
+    }
 
 
     /**
@@ -36,13 +41,19 @@ class Square {
      * Gets perimeter
      * @return double representing perimeter
      */
-    // TODO: implement getter for perimeter
+    // implement getter for perimeter
+    public double getPerimeter() {
+        return perimeter;
+    }
 
     /**
      * Gets area
      * @return double representing area
      */
-    // TODO: implement getter for area
+    // implement getter for area
+    public double getArea() {
+        return area;
+    }
 
     /**
      * Sets side length. Perimeter and area are updated
@@ -51,18 +62,28 @@ class Square {
     public void setSide(double s) {
         side = s;
         perimeter = 4 * side; // calculate perimeter
-        // TODO: calculate the area
+        //  calculate the area
+        area = side * side;
     }
 
     /**
      * Sets area. Perimeter and side length are updated
      */
-    // TODO: implement - you will need to import java.lang.Math to use sqrt() method
-
+    // implement - you will need to import java.lang.Math to use sqrt() method
+    public void setArea(double a) {
+        area = a;
+        side = Math.sqrt(area);
+        perimeter = side*4;
+    }
 
     /**
      * Sets perimeter. Area and side length are updated
      */
-    // TODO: implement - you will need to import java.lang.Math to use sqrt() method
+    // implement - you will need to import java.lang.Math to use sqrt() method
+    public void setPerimeter(double p){
+        perimeter = p;
+        side = p/4;
+        area = side * side;
+    }
 
 }
